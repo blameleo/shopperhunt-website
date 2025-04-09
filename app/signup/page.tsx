@@ -1,24 +1,48 @@
 "use client";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import ShopperForm from "@/components/signup/ShopperForm";
+import VendorForm from "@/components/signup/VendorForm";
 import Image from "next/image";
 import React, { useState } from "react";
 
 export default function Page() {
+  const [activeTab, setActiveTab] = useState<"vendor" | "shopper">("vendor");
+
   return (
     <div className="">
       <Navbar />
       <section className="min-h-[90vh] mx-[1em] lg:mx-[10em] py-10">
-        <SignUpTabs />
+        <div className="flex justify-between">
+          <div>
+            <SignUpTabs activeTab={activeTab} setActiveTab={setActiveTab} />
+            {activeTab === "vendor" && (
+              <div>
+                <VendorForm />
+              </div>
+            )}
+            {activeTab === "shopper" && (
+              <div>
+                <ShopperForm />
+              </div>
+            )}
+          </div>
+
+          <div></div>
+        </div>
       </section>
       <Footer />
     </div>
   );
 }
 
-function SignUpTabs() {
-  const [activeTab, setActiveTab] = useState<"vendor" | "shopper">("vendor");
-
+function SignUpTabs({
+  activeTab,
+  setActiveTab,
+}: {
+  activeTab: "vendor" | "shopper";
+  setActiveTab: "vendor" | "shopper";
+}) {
   const tabs: {
     key: "vendor" | "shopper";
     label: string;
