@@ -12,9 +12,9 @@ export default function Page() {
   return (
     <div className="">
       <Navbar />
-      <section className="min-h-[90vh] mx-[1em] lg:mx-[10em] py-10">
-        <div className="flex justify-between">
-          <div>
+      <section className="m mx-[1em] lg:mx-[10em] py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center ">
+          <div className="">
             <SignUpTabs activeTab={activeTab} setActiveTab={setActiveTab} />
             {activeTab === "vendor" && (
               <div>
@@ -28,7 +28,15 @@ export default function Page() {
             )}
           </div>
 
-          <div></div>
+          <div className=" place-items-end">
+            <Image
+              src="/signup/groceries1.png"
+              alt="groceries image"
+              width={500}
+              height={500}
+              className=""
+            />
+          </div>
         </div>
       </section>
       <Footer />
