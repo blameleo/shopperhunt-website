@@ -28,10 +28,10 @@ function Slider() {
     <div
       ref={sliderRef}
       style={{
-        width: "845px",
+        width: "745px",
         height: "480px",
       }}
-      className="keen-slider  bg-[#F2DA10] border-2 border-[#422800] rounded-[24px] shadow-[8px_8px_0_0_#422800]"
+      className="keen-slider   bg-[#F2DA10] border-2 border-[#422800] rounded-[24px] shadow-[8px_8px_0_0_#422800]"
     >
       <div className="keen-slider__slide">1</div>
       <div className="keen-slider__slide">2</div>

@@ -4,10 +4,10 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <div className="px-[10em] bg-[#FFF5D3] h-[65vh] flex pt-16 gap-x-   justify-between">
+    <div className="px-4 sm:px-[10em] bg-[#FFF5D3] h-[90vh]  md:h-[75vh]  pt-16 flex flex-col md:flex-row md:justify-between">
       {/**first container */}
       <div className="">
-        <div className="mb-16 space-y-2">
+        <div className="mb:mb-16 space-y-2">
           <Tags>
             {" "}
             <Image
@@ -19,12 +19,12 @@ export default function Hero() {
             />{" "}
             Vendor
           </Tags>
-          <p className="text-[24px] leading-[30px]">
+          <p className="md:text-[24px] md:leading-[30px]">
             We bring shoppers to you while <br /> you focus on your core
             business.
           </p>
         </div>
-        <div className="relative  w-[352px] h-[345px] overflow-y-clip flex justify-center   bg-[#F2DA10] border-2 border-[#422800] rounded-[24px] shadow-[8px_8px_0_0_#422800]">
+        <div className="relative hidden  w-[352px] h-[345px] overflow-y-clip md:flex justify-center   bg-[#F2DA10] border-2 border-[#422800] rounded-[24px] shadow-[8px_8px_0_0_#422800]">
           <Labels className="-left-24 top-7">
             {" "}
             <Image
@@ -59,33 +59,36 @@ export default function Hero() {
       </div>
 
       {/**middle container */}
-      <div className="pt-20 space-y-7 text-center ">
-        <div className="flex flex-col  gap-y-2 font-bold text-[65px] leading-[66px]">
+      <div className="pt-10 md:pt-20 md:space-y-7 text-center ">
+        <div className="flex flex-col items-center  md:gap-y-2 font-bold text-[40px] md:text-[65px] md:leading-[66px]">
           <h1>Connecting</h1>
-          <h1>Shoppers to Local</h1>
+          <h1 className="text-nowrap">Shoppers to Local</h1>
           <h1>Stores</h1>
         </div>
         <p className="leading-[30px] text-[24px]">
           See IT. Source IT. Secure IT.
         </p>
-        <div className="flex justify-center gap-4 items-center">
+        <div className="flex justify-center gap-x-4 items-center">
           <Image
             src="/App-Store.png"
             alt="app store button"
             width={202}
             height={59}
+            className="w-32"
           />
           <Image
             src="/Google-Play.png"
             alt="app store button"
             width={202}
             height={59}
+            className="w-32"
+
           />
         </div>
       </div>
 
       {/**last container */}
-      <div className="">
+      <div className="hidden md:block">
         <div className="relative  w-[352px] h-[345px]  flex justify-center   bg-[#F2DA10] border-2 border-[#422800] rounded-[24px] shadow-[8px_8px_0_0_#422800]">
           <Labels className="top-12 -left-24">
             {" "}
