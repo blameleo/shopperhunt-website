@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "./Slider";
-import Button from "./Button";
+import { Button } from "./ui/Button";
 
 function Benefits() {
   return (
@@ -12,7 +12,7 @@ function Benefits() {
       </div>
 
       {/** slider one */}
-      <main className="flex flex-col lg:flex-row gap-20 justify-between">
+      <main className="flex flex-col lg:flex-row   justify-between">
         <div>
           <Slider />
 
@@ -22,7 +22,7 @@ function Benefits() {
               Display a catalog of products. <br /> Increase online presence.{" "}
             </p>
 
-            <Button text="Learn More" />
+            <Button variant={'primary'}>Learn More</Button>
           </div>
         </div>
         <div>
@@ -35,7 +35,7 @@ function Benefits() {
               nearby stores.{" "}
             </p>
 
-            <Button text="Learn More" />
+            <Button variant="primary">Learn More</Button>
           </div>
         </div>
       </main>

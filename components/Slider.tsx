@@ -6,7 +6,7 @@ import { useKeenSlider } from "keen-slider/react";
 import { PiCaretLeftBold, PiCaretRightBold } from "react-icons/pi";
 
 function Slider() {
-  const [currentSlide, setCurrentSlide] = useState(0);
+  // const [currentSlide, setCurrentSlide] = useState(0);
 
   const [sliderRef, instanceRef] = useKeenSlider({
     initial: 0,
@@ -28,8 +28,8 @@ function Slider() {
     <div
       ref={sliderRef}
       style={{
-        width: "645px",
-        height: "440px",
+        width: "845px",
+        height: "480px",
       }}
       className="keen-slider  bg-[#F2DA10] border-2 border-[#422800] rounded-[24px] shadow-[8px_8px_0_0_#422800]"
     >

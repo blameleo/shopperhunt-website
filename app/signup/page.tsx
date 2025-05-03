@@ -12,9 +12,9 @@ export default function Page() {
   return (
     <div className="">
       <Navbar />
-      <section className="m mx-[1em] lg:mx-[10em] py-20">
+      <section className="mx-[1em] lg:mx-[10em] py-12 md:py-28">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center ">
-          <div className="">
+          <div >
             <SignUpTabs activeTab={activeTab} setActiveTab={setActiveTab} />
             {activeTab === "vendor" && (
               <div>
@@ -32,9 +32,9 @@ export default function Page() {
             <Image
               src="/signup/groceries1.png"
               alt="groceries image"
-              width={500}
-              height={500}
-              className=""
+              width={600}
+              height={600}
+              className="hidden lg:block"
             />
           </div>
         </div>
@@ -49,7 +49,7 @@ function SignUpTabs({
   setActiveTab,
 }: {
   activeTab: "vendor" | "shopper";
-  setActiveTab: "vendor" | "shopper";
+  setActiveTab: (param: "vendor" | "shopper") => void;
 }) {
   const tabs: {
     key: "vendor" | "shopper";

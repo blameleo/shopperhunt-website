@@ -2,3 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+.container {
+    position: relative;
+    overflow: hidden; /* hides all overflow */
+    padding-bottom: 20px; /* create space internally */
+  }
+  
+  .inner-content {
+    margin-bottom: -20px; /* push content down to be clipped */
+  }
