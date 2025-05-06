@@ -18,7 +18,7 @@ function Footer() {
         </div>
 
         {/* Links */}
-        <ul className="flex flex-col  sm:flex-row justify-center gap-x-4 lg:gap-x-6 gap-y-3 text-sm md:text-base text-center sm:text-left flex-wrap">
+        <ul className="flex flex-col  sm:flex-row justify-center gap-x-4 lg:gap-x-6 gap-y-3 text-sm md:text-sm lg:text-base text-center sm:text-left flex-wrap">
           <li>
             <Link href="#" className="underline hover:text-gray-300 transition-colors">
               About Us
