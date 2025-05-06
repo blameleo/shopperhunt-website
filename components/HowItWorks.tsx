@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./Button";
+import { Button } from "./ui/Button";
 
 function HowItWorks() {
   return (
@@ -10,7 +10,7 @@ function HowItWorks() {
           <p className="text-[20px]">Find out more here!</p>
         </div>
 
-        <Button text="Learn More" shadow="light"/>
+        <Button variant="secondary">Learn More</Button>
       </div>
     </div>
   );
