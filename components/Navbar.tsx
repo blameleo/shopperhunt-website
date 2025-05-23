@@ -26,7 +26,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="px-[1em] lg:mx-[10em] lg:py-[3em] py-[1em] border-b-2 border-black flex justify-between items-center">
+    <header className="px-[1em] lg:mx-[3em] lg:py-[3em] py-[1em] border-b-2 border-black flex justify-between items-center">
       <Link href="/" className="cursor-pointer" aria-label="ShopperHunt Home">
         <Image
           src="/logo/ShopperHunt-Logo.png"

@@ -12,9 +12,9 @@ export default function Page() {
   return (
     <div className="">
       <Navbar />
-      <section className="mx-[1em] lg:mx-[10em] py-12 md:py-28">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center ">
-          <div >
+      <section className=" md:mx-[3em] py-12 md:py-20 px-[1em]">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 items-center ">
+          <div>
             <SignUpTabs activeTab={activeTab} setActiveTab={setActiveTab} />
             {activeTab === "vendor" && (
               <div>
@@ -28,13 +28,13 @@ export default function Page() {
             )}
           </div>
 
-          <div className=" place-items-end">
+          <div className="hidden xl:block place-items-end">
             <Image
               src="/signup/groceries1.png"
               alt="groceries image"
               width={600}
               height={600}
-              className="hidden lg:block"
+              className="hidden lg:block "
             />
           </div>
         </div>
