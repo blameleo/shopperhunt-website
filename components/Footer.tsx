@@ -1,11 +1,11 @@
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
 
 function Footer() {
   return (
-    <div className="lg:mx-[10em] px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 py-10 bg-black text-white rounded-t-[24px] space-y-10 md:space-y-16">
+    <div className="p-10  lg:mx-[3em] bg-black text-white rounded-t-[24px] space-y-10 md:space-y-16">
       {/* Top Section */}
-      <div className="flex flex-col md:flex-row  md:items-center md:justify-between space-y-8 md:space-y-0">
+      <div className="flex flex-col md:flex-row  md:items-center gap-5 md:justify-between space-y-8 md:space-y-0">
         {/* Logo */}
         <div className="flex justify-center md:justify-start">
           <Image
@@ -13,36 +13,48 @@ function Footer() {
             alt="shopper hunt logo"
             width={200}
             height={50}
-            className="cursor-pointer w-[150px] md:w-[200px] h-auto"
+            className="cursor-pointer w-[150px] lg:w-[200px] h-auto"
           />
         </div>
 
         {/* Links */}
-        <ul className="flex flex-col  sm:flex-row justify-center gap-x-4 lg:gap-x-6 gap-y-3 text-sm md:text-sm lg:text-base text-center sm:text-left flex-wrap">
+        <ul className="flex flex-col  sm:flex-row justify-center gap-x-4 lg:gap-x-6 gap-y-5 text-sm md:text-sm lg:text-base text-center sm:text-left flex-wrap">
           <li>
-            <Link href="#" className="underline hover:text-gray-300 transition-colors">
+            <Link
+              href="#"
+              className="sm:underline hover:text-gray-300 transition-colors"
+            >
               About Us
             </Link>
           </li>
           <li>
-            <Link href="#" className="underline hover:text-gray-300 transition-colors">
+            <Link
+              href="#"
+              className="sm:underline hover:text-gray-300 transition-colors"
+            >
               Become a Vendor
             </Link>
           </li>
           <li>
-            <Link href="#" className="underline hover:text-gray-300 transition-colors">
+            <Link
+              href="#"
+              className="sm:underline hover:text-gray-300 transition-colors"
+            >
               Become a Shopper
             </Link>
           </li>
           <li>
-            <Link href="#" className="underline hover:text-gray-300 transition-colors">
+            <Link
+              href="#"
+              className="sm:underline hover:text-gray-300 transition-colors"
+            >
               Blog
             </Link>
           </li>
         </ul>
 
         {/* Socials */}
-        <div className="flex justify-center md:justify-end items-center gap-4">
+        <div className="flex justify-center md:justify-end items-center gap-4 ">
           <Image
             src="/socials/linkedin.png"
             alt="linkedin"
@@ -71,7 +83,9 @@ function Footer() {
       <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-10">
         {/* Contact */}
         <div className="space-y-3 text-base md:text-lg text-center md:text-left">
-          <h2 className="bg-[#F2DA10] text-black px-2 py-1 inline-block rounded-md font-semibold">Contact Us:</h2>
+          <h2 className="bg-[#F2DA10] text-black px-2 py-1 inline-block rounded-md font-semibold">
+            Contact Us:
+          </h2>
           <p>Email: info@shopperhunt.com</p>
           <p>Phone: 555-567-8901</p>
           <div>
@@ -81,7 +95,7 @@ function Footer() {
         </div>
 
         {/* Newsletter */}
-        <div className="w-full lg:w-auto flex flex-col sm:flex-row gap-4 bg-[#8F8F8F] rounded-[12px] p-4 sm:p-5 items-center justify-center">
+        <div className="sm:hidden space-y-6 lg:space-y-0 w-full lg:w-auto lg:flex flex-col sm:flex-row gap-4 bg-gray-800 sm:bg-[#8F8F8F] rounded-[12px] p-4 sm:p-5 items-center justify-center">
           <input
             type="email"
             placeholder="Email"
@@ -96,13 +110,18 @@ function Footer() {
       {/* Bottom */}
       <hr className="border-gray-600" />
       <div className="flex flex-col sm:flex-row justify-between items-center text-sm md:text-base text-center sm:text-left space-y-3 sm:space-y-0">
-        <span>© {new Date().getFullYear()} ShopperHunt. All Rights Reserved.</span>
-        <Link href="#" className="underline hover:text-gray-300 transition-colors">
+        <span>
+          © {new Date().getFullYear()} ShopperHunt. All Rights Reserved.
+        </span>
+        <Link
+          href="#"
+          className="underline hover:text-gray-300 transition-colors"
+        >
           Privacy Policy
         </Link>
       </div>
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

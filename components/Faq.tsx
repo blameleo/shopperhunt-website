@@ -11,7 +11,7 @@ interface FaqCardProps {
 
 export default function Faq() {
   return (
-    <div className="px-4 sm:px-6 md:px-10 lg:px-16 xl:px-[10em] py-12 md:py-20 lg:py-28">
+    <div className="lg:mx-[3em] px-[1em] py-12 md:py-20">
       <div className="flex pb-6 md:pb-10">
         <h1 className="bg-black text-white font-semibold text-xl sm:text-2xl md:text-[28px] px-3 sm:px-7 py-4 rounded-[12px]">
           Some Frequently Asked Questions

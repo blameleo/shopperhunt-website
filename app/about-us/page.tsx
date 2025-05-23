@@ -15,7 +15,7 @@ function Page() {
         <Navbar />
 
         {/* Hero Section */}
-        <section className="mx-4 lg:mx-[10em] py-12 md:py-28 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <section className="lg:mx-[3em] px-[1em] py-12 md:py-20 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <Image
             src="/about-us-hero.png"
             alt="about us"
@@ -68,7 +68,7 @@ function Page() {
       </div>
 
       {/* How it works */}
-      <section className="mx-4 lg:mx-[10em] py-12 md:py-28">
+      <section className="lg:mx-[3em] px-[1em] py-12 md:py-20">
         <div className="pb-10">
           <h1 className="bg-black text-white font-semibold text-2xl md:text-3xl px-5 py-2 rounded-[12px] inline-block">
             How ShopperHunt Works
@@ -83,13 +83,13 @@ function Page() {
       </section>
 
       {/* Divider */}
-      <section className="mx-4 lg:mx-[10em]">
+      <section className=" lg:mx-[3em]">
         <div className="w-full h-[3px] bg-black"></div>
       </section>
 
       {/* Shopper Info */}
-      <section className="mx-4 lg:mx-[10em] py-12 md:py-28 space-y-20">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
+      <section className="lg:mx-[3em] px-[1em] py-12 md:py-20 space-y-20">
+        <div className="flex flex-col lg:flex-row items-center justify-evenly gap-10">
           <div className="space-y-4">
             <h1 className="font-bold text-3xl md:text-4xl">
               Extra Shopper Info
@@ -105,7 +105,7 @@ function Page() {
           </div>
         </div>
 
-        <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-evenly gap-10 ">
           <div className="w-full max-w-[464px] h-[300px] md:h-[464px] rounded-lg bg-gray-200 flex items-center justify-center">
             image goes here
           </div>
@@ -123,7 +123,7 @@ function Page() {
       </section>
 
       {/* Download Banner */}
-      <section className="mx-4 lg:mx-[10em] py-12 md:py-28">
+      <section className="lg:mx-[3em] px-[1em] py-12 md:py-20">
         <div className="bg-[#F2DA10] p-8 lg:p-16 rounded-[18px] flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="font-extrabold text-3xl md:text-3xl lg:text-5xl tracking-wider text-center md:text-left">
             Download Now!
@@ -160,8 +160,8 @@ export function ImageCard({
   description: string;
 }) {
   return (
-    <div className="space-y-4 text-center md:text-left w-full max-w-[490px]">
-      <div className="w-full h-[200px] md:h-[319px] rounded-lg bg-gray-200 flex items-center justify-center">
+    <div className="space-y-4 text-center md:text-left w-full ">
+      <div className="w-full h-[300px] md:h-[319px] rounded-lg bg-gray-200 flex items-center justify-center">
         image goes here
       </div>
       <h1 className="font-bold text-xl md:text-2xl">{title}</h1>
