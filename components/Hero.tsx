@@ -27,8 +27,7 @@ export default function AnimatedHero() {
           <div className="animate-bounce-in-up delay-200">
             <AnimatedTags>
               <Image
-                src="/vendor-tag.png
-"
+                src="/vendor-tag.png"
                 alt="vendor tag"
                 width={15}
                 height={15}
@@ -69,8 +68,7 @@ export default function AnimatedHero() {
             </FloatingLabels>
             <FloatingLabels className="bottom-6 -right-20 z-20 animate-float delay-1500">
               <Image
-                src="/check.png
-"
+                src="/check.png"
                 alt="card two"
                 width={30}
                 height={30}
@@ -98,8 +96,7 @@ export default function AnimatedHero() {
         >
           <FloatingLabels className="-left-12 top-5 animate-float delay-1000">
             <Image
-              src="/heroicons-outline_switch-vertical.png
-"
+              src="/heroicons-outline_switch-vertical.png"
               alt="sales png"
               width={50}
               height={50}
@@ -137,8 +134,7 @@ export default function AnimatedHero() {
       >
         <FloatingLabels className="-left-20 top-3 animate-float delay-1000">
           <Image
-            src="/heroicons-outline_switch-vertical.png
-"
+            src="/heroicons-outline_switch-vertical.png"
             alt="sales png"
             width={30}
             height={30}
@@ -158,8 +154,7 @@ export default function AnimatedHero() {
         </FloatingLabels>
 
         <Image
-          src="/groceries.png
-"
+          src="/groceries.png"
           alt="vendor tag"
           width={200}
           height={150}
@@ -197,8 +192,7 @@ export default function AnimatedHero() {
         >
           <div className="animate-bounce-in delay-1500 hover:scale-105 transition-transform duration-200">
             <Image
-              src="/App-Store.png
-"
+              src="/App-Store.png"
               alt="app store button"
               width={202}
               height={59}
@@ -207,8 +201,7 @@ export default function AnimatedHero() {
           </div>
           <div className="animate-bounce-in delay-1700 hover:scale-105 transition-transform duration-200">
             <Image
-              src="/Google-Play.png
-"
+              src="/Google-Play.png"
               alt="google play button"
               width={202}
               height={59}
@@ -233,8 +226,7 @@ export default function AnimatedHero() {
         >
           <FloatingLabels className="top-12 -left-12 sm:-left-24 animate-float delay-1200">
             <Image
-              src="/cake.png
-"
+              src="/cake.png"
               alt="cake png"
               width={50}
               height={50}
@@ -245,8 +237,7 @@ export default function AnimatedHero() {
 
           <div className="animate-pulse-gentle delay-2000">
             <Image
-              src="/card4.png
-"
+              src="/card4.png"
               alt="love"
               width={59}
               height={59}
@@ -256,8 +247,7 @@ export default function AnimatedHero() {
 
           <FloatingLabels className="bottom-10 -right-10 sm:-right-16 z-20 gap-x-1 animate-float delay-1700">
             <Image
-              src="/whiskey.png
-"
+              src="/whiskey.png"
               alt="whiskey png"
               width={50}
               height={50}
@@ -268,8 +258,7 @@ export default function AnimatedHero() {
 
           <div className="absolute -top-[1px]">
             <Image
-              src="/smiling_lady.png
-"
+              src="/smiling_lady.png"
               alt="smiling lady"
               width={298}
               height={200}
@@ -286,8 +275,7 @@ export default function AnimatedHero() {
         >
           <AnimatedTags>
             <Image
-              src="/shopper-tag.png
-"
+              src="/shopper-tag.png"
               alt="shopper tag"
               width={15}
               height={15}
@@ -318,8 +306,7 @@ export default function AnimatedHero() {
         >
           <FloatingLabels className="top-4 -left-14 animate-float delay-1200">
             <Image
-              src="/cake.png
-"
+              src="/cake.png"
               alt="cake png"
               width={30}
               height={30}
@@ -330,8 +317,7 @@ export default function AnimatedHero() {
 
           <div className="animate-pulse-gentle delay-2000">
             <Image
-              src="/card4.png
-"
+              src="/card4.png"
               alt="love"
               width={40}
               height={40}
@@ -341,8 +327,7 @@ export default function AnimatedHero() {
 
           <FloatingLabels className="bottom-6 -right-8 z-20 gap-x-1 animate-float delay-1700">
             <Image
-              src="/whiskey.png
-"
+              src="/whiskey.png"
               alt="whiskey png"
               width={30}
               height={30}
@@ -353,8 +338,7 @@ export default function AnimatedHero() {
 
           <div className="absolute -top-[1px]">
             <Image
-              src="/smiling_lady.png
-"
+              src="/smiling_lady.png"
               alt="smiling lady"
               width={200}
               height={150}
@@ -371,8 +355,7 @@ export default function AnimatedHero() {
         >
           <AnimatedTags>
             <Image
-              src="/shopper-tag.png
-"
+              src="/shopper-tag.png"
               alt="shopper tag"
               width={15}
               height={15}
