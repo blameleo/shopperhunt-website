@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { Button } from "./ui/Button";
 import { Menu, X } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { scrollToSection } from "@/app/helpers";
 
 export default function Navbar() {
   const pathName = usePathname();
@@ -20,7 +21,7 @@ export default function Navbar() {
     },
     {
       name: "FAQs",
-      href: "/faqs",
+      href: "#faqs",
       showOn: pathName !== "/signup",
     },
   ];
@@ -53,12 +54,23 @@ export default function Navbar() {
             (link) =>
               link.showOn && (
                 <li key={link.name}>
-                  <Link
-                    href={link.href}
-                    className="capitalize cursor-pointer hover:text-gray-600 transition-colors"
-                  >
-                    {link.name}
-                  </Link>
+                  {link.href.includes("#") ? (
+                    <button
+                      onClick={() =>
+                        scrollToSection(link.href.replace("#", ""))
+                      }
+                      className="capitalize cursor-pointer hover:text-gray-600 transition-colors"
+                    >
+                      {link.name}
+                    </button>
+                  ) : (
+                    <Link
+                      href={link.href}
+                      className="capitalize cursor-pointer hover:text-gray-600 transition-colors"
+                    >
+                      {link.name}
+                    </Link>
+                  )}
                 </li>
               )
           )}
@@ -91,7 +103,7 @@ export default function Navbar() {
           <Menu className="h-4 w-4" />
         </Button>
 
-        <SheetContent side="right" className="w-[80%] sm:w-[350px]" >
+        <SheetContent side="right" className="w-[80%] sm:w-[350px]">
           <nav className="flex flex-col h-full">
             <div className="flex justify-end mb-8">
               <SheetTrigger asChild>

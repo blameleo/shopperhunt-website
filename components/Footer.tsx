@@ -89,8 +89,8 @@ function Footer() {
           <p>Email: info@shopperhunt.com</p>
           <p>Phone: 555-567-8901</p>
           <div>
-            <p>Address: 1234 Main St</p>
-            <p>Moonstone City, Stardust State 12345</p>
+            <p>Address: 85 Great Portland Street</p>
+            <p>First Floor , London , W1W 7LT</p>
           </div>
         </div>
 
