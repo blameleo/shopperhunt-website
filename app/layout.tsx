@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
 import ScrollToTop from "@/components/ScrollToTop";
+import PageVisitsHooks from "@/components/PageVisitsHooks";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={`${outfit.className}  antialiased`}>
         {children}
         <ScrollToTop />
+        <PageVisitsHooks />
       </body>
     </html>
   );
